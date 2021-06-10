@@ -1,11 +1,13 @@
+import ItemListContainer from './components/ItemListContainer';
 import NavBar from './components/NavBar';
 
 
 function App() {
   return (
-    <div className="App">
+    <>
         < NavBar />
-    </div>
+        <ItemListContainer card='Aqui van a ir las cards de los productos!!!'/>
+    </>
   );
 }
 
