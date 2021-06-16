@@ -3,15 +3,19 @@ import logo from '../img/logo.png';
 import styled from '@emotion/styled';
 
 ////////////////////////////
-const Logo = styled.img`
+const Brand = styled.img`
     margin-left: 0rem;
     width: 180px;
     height: 80px;
 `;
-const CartWidget = () => {
+///////////////////////////
+
+const Logo = () => {
     return (
-            <Logo src={logo} alt="logo-malba" />
+        <a href="#!">
+            <Brand src={logo} alt="logo-malba" />
+        </a>
     )
 }
 
-export default CartWidget;
+export default Logo;

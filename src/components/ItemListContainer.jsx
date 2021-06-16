@@ -1,10 +1,25 @@
-import React from 'react'
+import React from 'react';
+import CartProducts from './CartProducts';
+import styled from '@emotion/styled';
 
-const ItemListContainer = ({card}) => {
+//////////////////////////////
+const Container = styled.div`
+  background: linear-gradient(to bottom, rgb(71, 123, 169), rgb(235, 231, 178));
+  height: 100vh;
+  padding: 30px;
+  display: flex;
+  justify-content: space-around;
+`; 
+////////////////////////////
+
+const ItemListContainer = ({stock}) => {
     return (
-        <div>
-            <h1>{card}</h1>
-        </div>
+        <Container>
+            <CartProducts stock={stock}/>
+            <CartProducts stock={stock}/>
+            <CartProducts stock={stock}/>
+            <CartProducts stock={stock}/>
+        </Container>
     )
 }
 
