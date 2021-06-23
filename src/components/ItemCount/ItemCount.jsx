@@ -19,10 +19,10 @@ const ItemCount = ({stock}) => {
 
 
     return (
-        <ul className="card_contador">
-            <li><button className="btn-contador" onClick={restarProducto}><i className="fas fa-minus fa-2x"></i></button></li>
+        <ul className="cont_contador">
+            <li><button className="boton-contador" onClick={restarProducto}><i className="fas fa-minus fa-2x"></i></button></li>
             <li><span className="contador">{cantidad}</span></li>
-            <li><button className="btn-contador" onClick={agregarProducto}><i className="fas fa-plus size: fa-2x"></i></button></li>  
+            <li><button className="boton-contador" onClick={agregarProducto}><i className="fas fa-plus size: fa-2x"></i></button></li>  
         </ul>
     )
 }

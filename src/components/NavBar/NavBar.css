@@ -18,7 +18,7 @@ nav {
     min-height: 90px;
 }
 
-div.container {
+div.contenedor {
     font-family: Raleway;
     margin: 0 auto;
     position: absolute;
@@ -26,7 +26,7 @@ div.container {
     transform: translateX(-50%);
 }
 
-div.container a {
+div.contenedor a {
     color: black;
     text-decoration: none;
     font: 20px Raleway;
