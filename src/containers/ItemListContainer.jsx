@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import CartProducts from '../components/CartProducts/CartProducts';
 import styled from '@emotion/styled';
 
@@ -15,7 +15,20 @@ const Contenedor = styled.div`
 `; 
 ////////////////////////////
 
-const ItemListContainer = ({stock, producto}) => {
+const ItemListContainer = ({stock}) => {
+
+    const [producto, setProductos] = useState([]);
+
+  //Extraer los Datos
+    useEffect(()=> {
+        const consultarBase = async () => {
+        const url = 'https://api.mercadolibre.com/sites/MLA/search?q=joyas';
+        const respuesta = await fetch(url);
+        const items = await respuesta.json();
+        setProductos(items.results);
+    }
+    consultarBase();
+  },[])
 
     return (
         <Contenedor>
