@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.png';
 import styled from '@emotion/styled';
+import { Link } from 'react-router-dom';
 
 ////////////////////////////
 const Brand = styled.img`
@@ -12,9 +13,9 @@ const Brand = styled.img`
 
 const Logo = () => {
     return (
-        <a href="#!">
+        <Link to="/">
             <Brand src={logo} alt="logo-malba" />
-        </a>
+        </Link>
     )
 }
 
